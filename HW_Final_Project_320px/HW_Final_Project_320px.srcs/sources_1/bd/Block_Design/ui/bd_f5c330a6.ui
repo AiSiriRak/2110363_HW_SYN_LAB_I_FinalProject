@@ -1,0 +1,46 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.01242",
+   "Default View_TopLeft":"-371,-7",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_SIO_C -pg 1 -lvl 3 -x 640 -y 240 -defaultsOSRD
+preplace port port-id_SIO_D -pg 1 -lvl 3 -x 640 -y 270 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -10 -y 360 -defaultsOSRD
+preplace port port-id_pclk -pg 1 -lvl 0 -x -10 -y 100 -defaultsOSRD
+preplace port port-id_vsync_cam -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace port port-id_href_cam -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace port port-id_xclk_cam -pg 1 -lvl 3 -x 640 -y 190 -defaultsOSRD
+preplace port port-id_hsync_0 -pg 1 -lvl 3 -x 640 -y 40 -defaultsOSRD
+preplace port port-id_vsync_0 -pg 1 -lvl 3 -x 640 -y 70 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -10 -y 420 -defaultsOSRD
+preplace portBus vga_out -pg 1 -lvl 3 -x 640 -y 440 -defaultsOSRD
+preplace portBus data_cam -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace inst Setting -pg 1 -lvl 2 -x 490 -y 270 -defaultsOSRD
+preplace inst vga_controller_0 -pg 1 -lvl 2 -x 490 -y 90 -defaultsOSRD
+preplace inst ov7670_capture_0 -pg 1 -lvl 1 -x 180 -y 180 -defaultsOSRD
+preplace inst frame_buffer_0 -pg 1 -lvl 1 -x 180 -y 530 -defaultsOSRD
+preplace inst filter_sel_0 -pg 1 -lvl 2 -x 490 -y 440 -defaultsOSRD
+preplace inst clock_0 -pg 1 -lvl 1 -x 180 -y 350 -defaultsOSRD
+preplace netloc Setting_SIO_C_0 1 2 1 610J 240n
+preplace netloc Setting_SIO_D_0 1 2 1 NJ 270
+preplace netloc rst_0_1 1 0 2 20 280 NJ
+preplace netloc clock_0_clk_out24 1 1 2 350 190 NJ
+preplace netloc clk_in_0_1 1 0 1 NJ 360
+preplace netloc frame_buffer_0_dout 1 1 1 370J 440n
+preplace netloc sw_1_1 1 0 2 NJ 420 NJ
+preplace netloc clock_0_clk_out25 1 1 1 360 340n
+preplace netloc filter_sel_0_dout 1 2 1 NJ 440
+preplace netloc pclk_1_1 1 0 1 30J 100n
+preplace netloc vsync_cam_1_1 1 0 1 10J 160n
+preplace netloc href_0_1 1 0 1 10J 190n
+preplace netloc din_0_1 1 0 1 NJ 220
+preplace netloc vga_controller_0_hsync 1 2 1 610J 40n
+preplace netloc vga_controller_0_vsync 1 2 1 NJ 70
+levelinfo -pg 1 -10 180 490 640
+pagesize -pg 1 -db -bbox -sgen -150 -10 790 640
+"
+}
+

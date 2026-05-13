@@ -1,0 +1,72 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.743444",
+   "Default View_TopLeft":"-335,3",
+   "ExpandedHierarchyInLayout":"/top_module",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_pwdn_cam_0 -pg 1 -lvl 2 -x 1210 -y 120 -defaultsOSRD
+preplace port port-id_rst_cam_0 -pg 1 -lvl 2 -x 1210 -y 150 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 410 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port port-id_scl_cam -pg 1 -lvl 2 -x 1210 -y 430 -defaultsOSRD
+preplace port port-id_pclk -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
+preplace port port-id_vsync_cam -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port port-id_href_cam -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace port port-id_sda_cam -pg 1 -lvl 2 -x 1210 -y 460 -defaultsOSRD
+preplace port port-id_xclk_cam -pg 1 -lvl 2 -x 1210 -y 660 -defaultsOSRD
+preplace port port-id_hsync_vga -pg 1 -lvl 2 -x 1210 -y 710 -defaultsOSRD
+preplace port port-id_vsync_vga -pg 1 -lvl 2 -x 1210 -y 740 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace portBus vga_r -pg 1 -lvl 2 -x 1210 -y 580 -defaultsOSRD
+preplace portBus vga_g -pg 1 -lvl 2 -x 1210 -y 550 -defaultsOSRD
+preplace portBus vga_b -pg 1 -lvl 2 -x 1210 -y 520 -defaultsOSRD
+preplace portBus data_cam -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
+preplace inst top_module_0 -pg 1 -lvl 1 -x 220 -y 150 -defaultsOSRD
+preplace inst top_module -pg 1 -lvl 1 -x 220 -y 400 -defaultsOSRD
+preplace inst top_module|Setting -pg 1 -lvl 3 -x 930 -y 450 -defaultsOSRD
+preplace inst top_module|vga_controller_0 -pg 1 -lvl 3 -x 930 -y 760 -defaultsOSRD
+preplace inst top_module|ov7670_capture_0 -pg 1 -lvl 1 -x 320 -y 430 -defaultsOSRD
+preplace inst top_module|frame_buffer_0 -pg 1 -lvl 2 -x 630 -y 420 -defaultsOSRD
+preplace inst top_module|filter_sel_0 -pg 1 -lvl 3 -x 930 -y 580 -defaultsOSRD
+preplace inst top_module|clock_0 -pg 1 -lvl 2 -x 630 -y 650 -defaultsOSRD
+preplace netloc top_module_0_pwdn_cam 1 1 1 NJ 120
+preplace netloc top_module_0_rst_cam 1 1 1 1190J 140n
+preplace netloc rst_1_1 1 0 1 NJ 410
+preplace netloc clk_1_1 1 0 1 20J 510n
+preplace netloc Top_SIO_C_0 1 1 1 NJ 430
+preplace netloc sw_1_1 1 0 1 20J 540n
+preplace netloc Top_dout_0 1 1 1 1190 520n
+preplace netloc pclk_1_1 1 0 1 20J 570n
+preplace netloc vsync_cam_1_1 1 0 1 NJ 600
+preplace netloc href_0_1 1 0 1 20J 620n
+preplace netloc din_0_1 1 0 1 20J 640n
+preplace netloc Top_SIO_D 1 1 1 1190J 450n
+preplace netloc Top_xclk_cam_1 1 1 1 NJ 660
+preplace netloc Top_hsync_0 1 1 1 1190J 710n
+preplace netloc Top_vsync_0 1 1 1 NJ 740
+preplace netloc top_module|Setting_SIO_C_0 1 3 1 N 430
+preplace netloc top_module|Setting_SIO_D_0 1 3 1 N 450
+preplace netloc top_module|rst_0_1 1 0 3 180 540 440 580 800
+preplace netloc top_module|clock_0_clk_out24 1 2 2 790 660 NJ
+preplace netloc top_module|clk_in_0_1 1 0 2 NJ 530 450J
+preplace netloc top_module|frame_buffer_0_dout 1 2 1 810 420n
+preplace netloc top_module|sw_1_1 1 0 3 NJ 560 NJ 560 NJ
+preplace netloc top_module|clock_0_clk_out25 1 1 2 480 570 780
+preplace netloc top_module|filter_sel_0_dout 1 3 1 N 580
+preplace netloc top_module|pclk_1_1 1 0 2 160 550 460
+preplace netloc top_module|vsync_cam_1_1 1 0 1 170 430n
+preplace netloc top_module|href_0_1 1 0 1 190 450n
+preplace netloc top_module|din_0_1 1 0 1 200 470n
+preplace netloc top_module|vga_controller_0_hsync 1 3 1 N 720
+preplace netloc top_module|vga_controller_0_vsync 1 3 1 N 740
+preplace netloc top_module|ov7670_capture_0_dout 1 1 1 N 410
+preplace netloc top_module|ov7670_capture_0_address 1 1 1 N 430
+preplace netloc top_module|ov7670_capture_0_w_valid 1 1 1 470 390n
+levelinfo -pg 1 0 220 1210
+levelinfo -hier top_module * 320 630 930 *
+pagesize -pg 1 -db -bbox -sgen -140 0 1340 880
+pagesize -hier top_module -db -bbox -sgen 130 310 1080 860
+"
+}
+

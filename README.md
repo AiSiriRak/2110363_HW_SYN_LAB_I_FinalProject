@@ -3,12 +3,6 @@
 
 FPGA-based real-time video capture and processing system using the OV7670 camera module and VGA output on the Basys 3 FPGA board.
 
-## Hardware
-- Basys 3 FPGA Board
-- OV7670 Camera Module (without FIFO)
-- VGA Monitor + VGA Cable
-- USB Cable
-
 ## Features
 - Real-time video capture
 - VGA display output

@@ -22,5 +22,5 @@ FPGA-based real-time video capture and processing system using the OV7670 camera
 - 320x240 and 640x480 versions
 
 ## Source Code
-- 320px version → [HW_Final_Project_320px](./HW_Final_Project_320px/HW_Final_Project_320px.srcs/sources_1/imports/New folder)
-- 640px version → [HW_Final_Project_640px](./HW_Final_Project_640px/HW_Final_Project_320px.srcs/sources_1/imports/New folder)
+- 320px version → [HW_Final_Project_320px](./HW_Final_Project_320px/HW_Final_Project_320px.srcs)
+- 640px version → [HW_Final_Project_640px](./HW_Final_Project_640px/HW_Final_Project_320px.srcs)

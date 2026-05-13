@@ -1,0 +1,95 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed May 13 17:21:18 2026
+| Host         : Siripudsorn running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    17 |
+|    Minimum number of control sets                        |    17 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    76 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    17 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     3 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |           16 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              26 |            9 |
+| Yes          | No                    | No                     |              19 |           17 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              82 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-------------------------------------+----------------------------+------------------+----------------+--------------+
+|          Clock Signal         |            Enable Signal            |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+-------------------------------------+----------------------------+------------------+----------------+--------------+
+|  clkgen/clk__0/inst/clk_out24 |                                     |                            |                1 |              1 |         1.00 |
+|  clkgen/clk__0/inst/clk_out24 | setting/SIO_C_i_1_n_0               | rst_IBUF                   |                1 |              1 |         1.00 |
+|  clkgen/clk__0/inst/clk_out24 | setting/SIO_D_i_1_n_0               | rst_IBUF                   |                1 |              1 |         1.00 |
+|  pclk_IBUF_BUFG               |                                     |                            |                2 |              3 |         1.50 |
+|  pclk_IBUF_BUFG               | capture/d_firstbyte[7]_i_1_n_0      |                            |                7 |              7 |         1.00 |
+|  clkgen/clk__0/inst/clk_out24 |                                     | rst_IBUF                   |                3 |              7 |         2.33 |
+|  clkgen/clk__0/inst/clk_out24 | setting/FSM_onehot_state[7]_i_1_n_0 | rst_IBUF                   |                1 |              7 |         7.00 |
+|  clkgen/clk__0/inst/clk_out24 | setting/count[0]                    | rst_IBUF                   |                3 |              8 |         2.67 |
+|  clkgen/clk__0/inst/clk_out24 | setting/current_byte_1[0]           | rst_IBUF                   |                4 |              8 |         2.00 |
+|  clkgen/clk__0/inst/clk_out24 |                                     | setting/divcnt[8]_i_1_n_0  |                4 |              9 |         2.25 |
+|  pclk_IBUF_BUFG               | capture/x[0]                        | capture/x[9]_i_1_n_0       |                2 |             10 |         5.00 |
+|  clkgen/clk__0/inst/clk_out25 |                                     | vga/x[9]_i_1__0_n_0        |                2 |             10 |         5.00 |
+|  clkgen/clk__0/inst/clk_out25 | vga/y_0[0]                          | rst_IBUF                   |                3 |             10 |         3.33 |
+|  pclk_IBUF_BUFG               | capture/dout[15]_i_1_n_0            |                            |               10 |             12 |         1.20 |
+|  pclk_IBUF_BUFG               | capture/address[0]_i_2_n_0          | capture/address[0]_i_1_n_0 |                5 |             17 |         3.40 |
+|  clkgen/clk__0/inst/clk_out24 | setting/wait_cnt_0[0]               | rst_IBUF                   |                5 |             20 |         4.00 |
+|  clkgen/clk__0/inst/clk_out25 |                                     |                            |               13 |             28 |         2.15 |
++-------------------------------+-------------------------------------+----------------------------+------------------+----------------+--------------+
+
+
